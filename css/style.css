@@ -1,0 +1,253 @@
+/*************************
+Input styles
+*************************/
+
+.ui-slider {
+  height: 6px;
+  border: none !important;
+  background: #e8e8e8;
+  margin-top: 12px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.ui-slider-range {
+  background: #c4c4c4;
+}
+
+#slider-range-from, #slider-range-until {
+  display: inline-block;
+}
+
+#slider-range-from, #slider-range-until {
+  width: 50%;
+}
+
+#slider-range-from .ui-slider-range, #slider-range-until .ui-slider-range {
+  border-radius: 0 !important;
+}
+
+
+
+.ui-slider-handle {
+  border-radius: 50%;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid #b2b2b2;
+  background: #ededed !important;
+}
+
+.ui-slider-handle:hover, .ui-slider-handle:active, .ui-slider-handle:focus {
+  background: #b2b2b2 !important;
+  border: 1px solid #b2b2b2;
+  cursor: pointer;
+}
+
+
+
+#from, #until {
+  width: 63px;
+  padding: 1px 0;
+  font-size: 14px;
+  font-weight: 400 !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: #fed824;
+  border: 0;
+}
+
+.lumen-timeOff {
+  color: #2b2b2b !important;
+}
+
+
+
+.ui-slider-handle:focus {
+  outline: 0 solid transparent;
+  transition: none;
+}
+
+
+/*************************
+General styles
+*************************/
+.lumen-control, .lumen-save, .lumen-scheduleOn, .lumen-close, .lumen-state, .lumen-active, .ui-slider-handle, #from, #until {
+  transition: .8s ease-in-out;
+  moz-transition: .8s ease-in-out;
+  o-transition: .8s ease-in-out;
+}
+
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.lumen-target {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgb(255, 205, 166);
+  opacity: 0.2;
+  pointer-events: none;
+  display: none;
+}
+
+.lumen {
+  width: 740px;
+  height: 486px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 30px 3px rgba(173,173,173,0.3);
+  -moz-box-shadow: 5px 5px 30px 3px rgba(173,173,173,0.3);
+  box-shadow: 5px 5px 30px 3px rgba(173,173,173,0.3);
+  border-radius: 5px;
+  position: relative;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  z-index: 10;
+}
+
+.lumen-inner {
+  width: 656px;
+  margin: 0 auto;
+}
+
+.lumen h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 34px 0 0;
+  cursor: default;
+  color: #2b2b2b;
+}
+
+.lumen-block {
+    margin-top: 38px;
+}
+
+.lumen-block + .lumen-block {
+  margin-top: 16px;
+}
+
+.lumen label {
+  display: inline-block;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.lumen span {
+  font-weight: 300;
+  /*font-style: italic;*/
+  color: #c4c4c4;
+}
+
+.lumen p {
+  display: inline-block;
+  font-weight: lighter;
+  color: #c4c4c4;
+  margin-top: -6px;
+  cursor: default;
+}
+
+.lumen p + p {
+  float: right;
+  margin-top: 0px;
+}
+
+.lumen a {
+  display: inline-block;
+  float: right;
+  color: #fed824;
+  cursor: pointer;
+}
+
+.lumen-time {
+  display: inline-block;
+  width: 260px;
+}
+
+/*************************
+Buttons
+*************************/
+
+.lumen-control {
+  display: inline-block;
+  float: right;
+  margin-top: 24px;
+}
+
+.lumen-close, .lumen-control {
+  line-height: 29px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lumen-save, .lumen-scheduleOn {
+  color: #fed824 !important;
+}
+
+.lumen-save:hover, .lumen-scheduleOn:hover {
+  color: #2b2b2b !important;
+}
+
+.lumen-scheduleOff:hover {
+  color: #fed824 !important;
+}
+
+.lumen-scheduleOff {
+  color: #2b2b2b !important;
+}
+
+.lumen-close {
+  color: #c4c4c4 !important;
+  margin-right: 29px;
+  font-weight: 400;
+}
+
+.lumen-close:hover {
+  color: #2b2b2b !important;
+}
+
+.lumen-activate {
+  width: 67px;
+  height: 67px;
+  margin-top: 37px;
+  float: right;
+}
+
+.lumen-state {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  background-image: url(../img/sun.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+}
+
+.lumen-active {
+  display: inline-block;
+  background-image: url(../img/moon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

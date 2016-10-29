@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen</title>
+  <link rel="stylesheet" href="css/jquery.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/js.js"></script>
+</head>
+
+<body>
+
+<div class='lumen-target'>&nbsp</div>
+
+<div class="lumen">
+  <div class="lumen-inner">
+
+    <h1>Lumen</h1>
+    <a class='lumen-activate'>
+      <div class='lumen-state'></div>
+    </a>
+
+    <div class='lumen-block'>
+      <label>Color temperature</label>
+
+      <div id="slider-range-color"></div>
+      <p>Sunset</p>
+      <p>Daylight</p>
+    </div>
+
+    <div class='lumen-block'>
+      <label>Intensity</label>
+
+      <div id="slider-range-intensity"></div>
+      <p>Lighter</p>
+      <p>Darker</p>
+    </div>
+
+    <div class='lumen-block'>
+      <label>Schedule<span> between</span></label>
+      <div class='lumen-time'>
+        <input class='lumen-timeOff' type="text" id="from" readonly>
+        <input class='lumen-timeOff' type="text" id="until" readonly>
+      </div>
+      <a id ='lumen-schedule' class='lumen-scheduleOn lumen-scheduleOff'>Off</a>
+      <div id="slider-range-from"></div><div id="slider-range-until"></div>
+      <p>From</p>
+      <p>Until</p>
+    </div>
+
+    <div class='lumen-control'>
+      <a class='lumen-save'>Save</a>
+      <a class='lumen-close'>Close</a>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
